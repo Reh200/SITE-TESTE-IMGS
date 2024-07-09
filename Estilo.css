@@ -1,0 +1,102 @@
+/* Estilos gerais */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: rgb(100, 50, 175);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Estilos para a navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #2E0854;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: purple;
+}
+
+/* Estilos para as seções */
+section {
+    padding: 20px;
+    border-bottom: 1px solid green ;
+    background-color: rgb(240, 200, 255);
+    position: relative; /* Garante que o botão 'back-to-top' fique relativo a cada seção */
+}
+
+section h2 {
+    color: darkviolet;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Estilos para imagens */
+.section-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Estilos para o botão 'back-to-top' */
+.back-to-top {
+    position: absolute;
+    bottom: 20px; /* Ajuste para não encostar nas bordas */
+    right: 20px;  /* Ajuste para não encostar nas bordas */
+    width: 15px;  /* Menor largura */
+    height: 15px; /* Menor altura */
+    background-color: #6A0DAD;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.back-to-top:hover {
+    background-color: #2E0854;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        width: 50%;
+        text-align: center;
+    }
+}
